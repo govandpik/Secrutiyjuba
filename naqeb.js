@@ -595,8 +595,7 @@ ${prefix}unlock
 ${prefix}unbansall
 ${prefix}movall
 ${prefix}invite
-[support](https://discord.gg/9PravbR) - [invite](https://discord.com/api/oauth2/authorize?client_id=719159661470810133&permissions=8&scope=bot) - [website](https://secruity.glitch.me/) - [Vote to my server](https://top.gg/servers/search?q=Secrutiy)
-       
+[support](https://discord.gg/DG9sFne) - [invite](https://discord.com/api/oauth2/authorize?client_id=768581279192711178&permissions=8&scope=bot)
     `)
     
     message.channel.sendEmbed(help);
@@ -672,7 +671,7 @@ naqeb.on("message", zaid => {
 
       .addField("**Members**", `${naqeb.users.size} `, true)
 
-      .addField("**Owner**",`<@605816441677152266> `)
+      .addField("**Owner**",`<@735458700810256497> `)
 
 
     zaid.channel.send(bot);
@@ -759,7 +758,7 @@ naqeb.on("message", async message => {
       .setAuthor(message.author.username, message.author.displayAvatarURL)
       .setThumbnail(message.author.avatarURL)
       .setTitle("click here to invite bots")
-      .setURL(`https://discord.com/api/oauth2/authorize?client_id=719159661470810133&permissions=8&scope=bot`);
+      .setURL(`https://discord.com/api/oauth2/authorize?client_id=768581279192711178&permissions=8&scope=bot`);
     message.channel.sendEmbed(invite);
   }
 });
