@@ -5,7 +5,7 @@ const invites = {};
 const wait = require("util").promisify(setTimeout);
 const moment = require("moment");
 const fs = require("fs");
-var prefix = "j/";
+var prefix = "p/";
 
 
 
@@ -16,7 +16,7 @@ var prefix = "j/";
 
 naqeb.on('ready', () => {
   console.log(`Logged in as ${naqeb.user.tag}!`);
- naqeb.user.setActivity("j/help",{type: 'Playing'})
+ naqeb.user.setActivity("p/help",{type: 'Playing'})
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -607,7 +607,7 @@ ${prefix}invite
 const db = require("quick.db"); // npm i quick.db
 
 naqeb.on("message", async message => {
-  const prefix = "j/"; //comand
+  const prefix = "p/"; //comand
  
   if (message.author.bot) return;
   if (!message.guild) return;
@@ -765,7 +765,7 @@ naqeb.on("message", async message => {
 });
 
 naqeb.on("ready", () => {
-  naqeb.user.setActivity("j/help | it's time secruity to your server!", { type: "Playing" });
+  naqeb.user.setActivity("p/help | it's time secruity to your server!", { type: "Playing" });
   naqeb.user.setStatus("Playing");
 });
 
