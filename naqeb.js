@@ -673,7 +673,7 @@ naqeb.on("message", zaid => {
 
       .addField("**Owner**",`<@735458700810256497> `)
       
-      .addField("**HELPER**,`<@760896101128732682> `)
+      .addField("**HELPER**",`<@760896101128732682> `)
 
 
     zaid.channel.send(bot); 
