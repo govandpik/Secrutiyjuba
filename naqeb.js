@@ -94,12 +94,12 @@ naqeb.on("message", message => {
     };
   if (!config[message.guild.id])
     config[message.guild.id] = {
-      banLimit: 2,
-      chaDelLimit: 2,
-      roleDelLimit: 2,
-      kickLimits: 2,
-      roleCrLimits: 2,
-      time: 2
+      banLimit: 1,
+      chaDelLimit: 1,
+      roleDelLimit: 1,
+      kickLimits: 1,
+      roleCrLimits: 1,
+      time: 1
     };
   if (message.content.startsWith(prefix + "settings")) {
     if (!message.member.hasPermission("ADMINISTRATOR")) return;
@@ -206,11 +206,11 @@ naqeb.on("channelDelete", async channel => {
   const entry = entry1.executor;
   if (!config[channel.guild.id])
     config[channel.guild.id] = {
-      banLimit: 2,
-      chaDelLimit: 2,
-      roleDelLimit: 2,
-      kickLimits: 2,
-      roleCrLimits: 2
+      banLimit: 1,
+      chaDelLimit: 1,
+      roleDelLimit: 1,
+      kickLimits: 1,
+      roleCrLimits: 1
     };
   if (!anti[channel.guild.id + entry.id]) {
     anti[channel.guild.id + entry.id] = {
@@ -267,11 +267,11 @@ naqeb.on("roleDelete", async channel => {
   const entry = entry1.executor;
   if (!config[channel.guild.id])
     config[channel.guild.id] = {
-      banLimit: 2,
-      chaDelLimit: 2,
-      roleDelLimit: 2,
-      kickLimits: 2,
-      roleCrLimits: 2
+      banLimit: 1,
+      chaDelLimit: 1,
+      roleDelLimit: 1,
+      kickLimits: 1,
+      roleCrLimits: 1
     };
   if (!anti[channel.guild.id + entry.id]) {
     anti[channel.guild.id + entry.id] = {
@@ -328,11 +328,11 @@ naqeb.on("roleCreate", async channel => {
   const entry = entry1.executor;
   if (!config[channel.guild.id])
     config[channel.guild.id] = {
-      banLimit: 2,
-      chaDelLimit: 2,
-      roleDelLimit: 2,
-      kickLimits: 2,
-      roleCrLimits: 2
+      banLimit: 1,
+      chaDelLimit: 1,
+      roleDelLimit: 1,
+      kickLimits: 1,
+      roleCrLimits: 1
     };
   if (!anti[channel.guild.id + entry.id]) {
     anti[channel.guild.id + entry.id] = {
@@ -388,11 +388,11 @@ naqeb.on("guildBanAdd", async (guild, user) => {
   const entry = entry1.executor;
   if (!config[guild.id])
     config[guild.id] = {
-      banLimit: 2,
-      chaDelLimit: 2,
-      roleDelLimit: 2,
-      kickLimits: 2,
-      roleCrLimits: 2
+      banLimit: 1,
+      chaDelLimit: 1,
+      roleDelLimit: 1,
+      kickLimits: 1,
+      roleCrLimits: 1
     };
   if (!anti[guild.id + entry.id]) {
     anti[guild.id + entry.id] = {
@@ -445,11 +445,11 @@ naqeb.on("guildKickAdd", async (guild, user) => {
   const entry = entry1.executor;
   if (!config[guild.id])
     config[guild.id] = {
-      banLimit: 2,
-      chaDelLimit: 2,
-      roleDelLimit: 2,
-      kickLimits: 2,
-      roleCrLimits: 2
+      banLimit: 1,
+      chaDelLimit: 1,
+      roleDelLimit: 1,
+      kickLimits: 1,
+      roleCrLimits: 1
     };
   if (!anti[guild.id + entry.id]) {
     anti[guild.id + entry.id] = {
@@ -506,11 +506,11 @@ naqeb.on("guildMemberRemove", async member => {
     const entry = entry2.executor;
     if (!config[member.id])
       config[member.id] = {
-        banLimit: 2,
-        chaDelLimit: 2,
-        roleDelLimit: 2,
-        kickLimits: 2,
-        roleCrLimits: 2
+        banLimit: 1,
+        chaDelLimit: 1,
+        roleDelLimit: 1,
+        kickLimits: 1,
+        roleCrLimits: 1
       };
     if (!anti[member.guild.id + entry.id]) {
       anti[member.guild.id + entry.id] = {
