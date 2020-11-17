@@ -589,13 +589,11 @@ ${prefix}settings channelD <number>
 ${prefix}settings time <number>
 ${prefix}antibot on
 ${prefix}antibot off
-${prefix}bot
 ${prefix}lock
 ${prefix}unlock
 ${prefix}unbansall
 ${prefix}movall
-${prefix}invite
-[support](https://discord.gg/DG9sFne) - [invite](https://discord.com/api/oauth2/authorize?client_id=768581279192711178&permissions=8&scope=bot)
+
     `)
     
     message.channel.sendEmbed(help);
@@ -650,35 +648,6 @@ naqeb.on("guildMemberAdd", async member => {
 
 
 
-
-
-
-
-naqeb.on("message", zaid => {
-  if (zaid.content === prefix + "bot") {
-    const bot = new Discord.RichEmbed()
-      .setTimestamp()
-      .setFooter("Sponsored By: Secrutiy ")
-      .setColor("#2e0000")
-    
-
-
-      .addField("**Name**", `${naqeb.user.tag} `, true)
-       
-      .addField("**ID Bot**",` 719159661470810133 `, true)
-    
-      .addField("**Server**", `${naqeb.guilds.size}`, true)
-
-      .addField("**Members**", `${naqeb.users.size} `, true)
-
-      .addField("**Owner**",`<@735458700810256497> `)
-      
-      .addField("**HELPER**",`<@760896101128732682> `)
-
-
-    zaid.channel.send(bot); 
-  }
-});
 
 naqeb.on("message", async message => {
   if (message.content === prefix + "unbansall") {
@@ -802,4 +771,4 @@ naqeb.on("message", message => {
   }
 });
 
-naqeb.login("NzY4NTgxMjc5MTkyNzExMTc4.X5CjGA.LKkRuLpEgqe3acRixMPX349Lor8");
+naqeb.login("Nzc4MjMyNTM2NTYzOTc0MTQ0.X7O_hw.T_3KVAalCoUCiHhmJx6N3XeRhyA");
